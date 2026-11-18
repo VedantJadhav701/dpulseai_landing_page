@@ -5,28 +5,28 @@ import { motion } from "framer-motion";
 
 const cards = [
   {
-    category: "OUR SOLUTIONS",
-    title: "From agentic AI to domain-specific models, intelligence is our core.",
-    image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=85&fit=crop",
-    alt: "AI machine learning dashboard with data visualization technology",
+    category: "ENTERPRISE AI",
+    title: "AI-driven analytics, SaaS platforms, and custom software tailored for organizations.",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=85&fit=crop",
+    alt: "Sovereign enterprise AI infrastructure and secure datacenter servers",
   },
   {
-    category: "TENETX",
-    title: "AI-native drilling intelligence for the oil and gas sector.",
-    image: "https://www.sterlingtt.com/wp-content/themes/yootheme/cache/61/oil-rig-61463d65.jpeg",
-    alt: "Oil rig drilling platform offshore in industrial setting",
+    category: "ROBOTICS BRAIN",
+    title: "Pioneering VLM & VLA models giving physical robots cognitive reasoning and action execution.",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=85&fit=crop",
+    alt: "Physical AI robotics brain with vision language action architecture",
   },
   {
-    category: "TEXFLOW",
-    title: "Deterministic typesetting for the global research community.",
-    image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&q=85&fit=crop",
-    alt: "Researcher writing academic paper at desk with notes",
+    category: "AGRICULTURE PHYSICAL AI",
+    title: "Alleviating workforce shortages in agriculture with autonomous field robotics and monitoring.",
+    image: "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=800&q=85&fit=crop",
+    alt: "Autonomous field robotics transforming agriculture and farming operations",
   },
   {
-    category: "IMPACT",
-    title: "Solving real problems for industries and society across India.",
-    image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=85&fit=crop",
-    alt: "Community of people collaborating with technology in India",
+    category: "FLAGSHIP PRODUCTS",
+    title: "Production-ready solutions: Healthcare Bot, ERMS retirement ledger, and E-Estimate system.",
+    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=85&fit=crop",
+    alt: "Production-grade AI operations platforms developed by Dpulseai",
   },
 ];
 

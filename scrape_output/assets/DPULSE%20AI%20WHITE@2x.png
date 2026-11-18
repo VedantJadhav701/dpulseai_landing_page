@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulseBoard - AI-Powered Data Analytics & Insights</title>
+    <meta name="description" content="PulseBoard: Transform your data with AI-powered analytics, predictions, and intelligent insights. Smart analytics, powerful decisions.">
+    <meta property="og:title" content="PulseBoard - Your Data, Your Pulse, Your Board">
+    <meta property="og:description" content="AI-powered data analytics platform with intelligent insights and predictions">
+    <script type="module" crossorigin src="/assets/index-CpVglrld.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BYr8Snuy.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

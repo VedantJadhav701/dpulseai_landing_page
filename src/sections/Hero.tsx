@@ -8,32 +8,32 @@ import { cn } from "@/lib/utils";
 
 const slides = [
   {
-    label: "AI INTELLIGENCE",
-    headline: "Unlock the Power of AI for Your Business.",
-    body: "Automating, analyzing, and accelerating workflows across industries.",
-    image: "https://desimonthdate.com/wp-content/uploads/2026/01/A-modern-business-environment-showcasing-AI-applications.-In-the-foreground-two-diverse-1024x585.png",
-    href: "/what-we-do"
+    label: "ENTERPRISE AI & AUTOMATION",
+    headline: "Pioneering Enterprise Intelligence for Organizations.",
+    body: "Scalable AI-powered analytics, custom software engineering, and sovereign on-premise models transforming business operations.",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=85&w=1920",
+    href: "/enterprise-ai"
   },
   {
-    label: "TENETX — OIL & GAS",
-    headline: "Physics-Native AI for Drilling Operations.",
-    body: "100% data sovereignty. Error rate below 0.5%. Zero cloud dependency.",
-    image: "https://media.istockphoto.com/id/2154103733/photo/oil-rig.jpg?s=612x612&w=0&k=20&c=7Qc9aCDMrjlLyPWWNgFTROvanTDok51xnEA7QapNQmU=",
-    href: "/subsidiaries/tenetx"
+    label: "PHYSICAL AI · ROBOTICS BRAIN",
+    headline: "Foundational VLM & VLA Models for Autonomous Robotics.",
+    body: "Engineering the cognitive brain for physical robots with Vision-Language-Action models, real-time edge processing, and embodied intelligence.",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=85&w=1920",
+    href: "/physical-ai"
   },
   {
-    label: "TEXFLOW — RESEARCH",
-    headline: "From Word to Publisher-Ready PDF. Instantly.",
-    body: "Zero-AI deterministic typesetting for researchers, scholars, and professors.",
-    image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=1920",
-    href: "/subsidiaries/texflow"
+    label: "PHYSICAL AI · AGRICULTURE DOMAIN",
+    headline: "Autonomous Field AI to Alleviate Agricultural Labor.",
+    body: "Deploying Physical AI in agriculture to drastically reduce workforce demand, automate field operations, and optimize crop yields.",
+    image: "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&q=85&w=1920",
+    href: "/agriculture"
   },
   {
-    label: "OUR MISSION",
-    headline: "AI Solutions for Industry. And for Society.",
-    body: "Building intelligent systems that solve real problems for real people.",
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1920&q=85&fit=crop",
-    href: "/about"
+    label: "TURNKEY AI PRODUCTS",
+    headline: "From Healthcare Bots to ERMS & E-Estimate Platforms.",
+    body: "Delivering production-grade AI applications across clinical assistance, retirement administration, and digital project estimation.",
+    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=85&w=1920",
+    href: "/projects"
   },
 ];
 
@@ -101,10 +101,10 @@ const Hero = () => {
       <div className="absolute bottom-0 left-0 w-full bg-black/20 backdrop-blur-sm border-t border-white/10 z-20">
         <div className="flex px-4 md:px-24 overflow-x-auto no-scrollbar">
           {[
-            "DPULSEAI",
-            "TENETX OIL & GAS",
-            "TEXFLOW RESEARCH",
-            "OUR IMPACT",
+            "ENTERPRISE AI",
+            "PHYSICAL AI & ROBOTICS",
+            "AGRICULTURE INNOVATION",
+            "FLAGSHIP PRODUCTS",
           ].map((tab, idx) => (
             <button
               key={tab}

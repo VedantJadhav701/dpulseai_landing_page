@@ -1,44 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 import PageHero from "@/components/PageHero";
-import { X } from "lucide-react";
-
-const board = [
-  { 
-    name: "Dpulseai Expert", 
-    role: "AI/ML Strategy", 
-    bio: "Specializing in the intersection of frontier intelligence systems, scalable engineering, and commercialization-first innovation.",
-    fullBio: "Operating at the intersection of frontier intelligence systems, scalable engineering, and commercialization-first innovation. Expertise lies in systems architecture — the belief that every intelligent pipeline, from data ingestion to deployment, must optimize precision, adaptability, and operational efficiency. Approaching innovation through modular intelligence design, where RAG pipelines, LLM ecosystems, and AgenticOps frameworks are engineered as scalable business infrastructure.",
-    avatar: "https://ui-avatars.com/api/?name=Dpulseai+Expert&background=B8922A&color=fff", 
-    color: "#B8922A" 
-  },
-  { 
-    name: "Dpulseai Expert", 
-    role: "Platform Engineering", 
-    bio: "Focusing on building scalable AI platforms that bridge intelligent systems, production engineering, and modern digital experiences.",
-    fullBio: "Specializing in building scalable AI platforms that bridge intelligent systems, production engineering, and modern digital experiences. Work focuses on transforming advanced AI research into deployment-ready infrastructure capable of operating reliably in real-world environments.",
-    avatar: "https://ui-avatars.com/api/?name=Dpulseai+Expert&background=1B5FA8&color=fff", 
-    color: "#1B5FA8" 
-  },
-  { 
-    name: "Dpulseai Expert", 
-    role: "Strategic Operations", 
-    bio: "Applying first-principles thinking to strategy, data, and growth to ensure every scalable solution respects input-output efficiency.",
-    fullBio: "Leadership rooted in the principle of energy and mass balance — a systems-thinking approach applied to strategy, data, and growth. Believing every scalable solution, whether a molecule or a machine learning model, must respect input-output efficiency, minimize waste, and maximize value.",
-    avatar: "https://ui-avatars.com/api/?name=Dpulseai+Expert&background=1A7A6E&color=fff", 
-    color: "#1A7A6E" 
-  },
-  { 
-    name: "Dpulseai Expert", 
-    role: "Scientific Advisory", 
-    bio: "Providing distinguished leadership across advanced science, national R&D ecosystems, and industrial innovation.",
-    fullBio: "Bringing a combination of scientific depth, commercialization foresight, and institutional credibility to the organization. Experience spans frontier research, scientific administration, innovation governance, and strategic technology development, with recognized contributions across nanomaterials, applied sciences, and scalable industrial frameworks.",
-    avatar: "https://ui-avatars.com/api/?name=Dpulseai+Expert&background=2C2C2C&color=fff", 
-    color: "#2C2C2C" 
-  },
-];
 
 const values = [
   { title: "Precision", desc: "In high-stakes industries, near-enough isn't enough. We build systems for 99.5%+ accuracy." },
@@ -47,16 +11,14 @@ const values = [
 ];
 
 const timeline = [
-  { year: "2024", title: "Company Founded", desc: "Dpulseai established in India." },
-  { year: "2024", title: "TENETX Launched", desc: "Physics-native AI platform for oil and gas drilling operations." },
-  { year: "2025", title: "TEXFLOW Initiated", desc: "Deterministic typesetting platform for the research community." },
-  { year: "2025", title: "First Industry Partnerships", desc: "Strategic partnerships with oil & gas and academic institutions." },
-  { year: "2026", title: "Scaling Operations", desc: "Expanding across industries and growing our team globally." },
+  { year: "2024", title: "Company Incorporated", desc: "DPULSE AI PRIVATE LIMITED incorporated in Pune, Maharashtra, India." },
+  { year: "2024", title: "Enterprise Products Launch", desc: "Deployed Healthcare Bot, ERMS (Employee Retirement Management), and E-Estimate platforms." },
+  { year: "2025", title: "Robotics Brain (VLM/VLA) R&D", desc: "Initiated foundational Vision-Language-Action research for autonomous physical robotics." },
+  { year: "2025", title: "Agriculture Domain Innovation", desc: "Pioneered Physical AI field robotics designed to drastically reduce agricultural manual workforce needs." },
+  { year: "2026", title: "Physical AI Deployment", desc: "Scaling Physical AI robotics brains and autonomous field operations across multiple real-world use cases." },
 ];
 
 export default function AboutClient() {
-  const [selectedMember, setSelectedMember] = useState<null | typeof board[0]>(null);
-
   return (
     <>
       <PageHero
@@ -81,13 +43,14 @@ export default function AboutClient() {
                 &ldquo;We bridge the gap between AI hype and industrial reality.&rdquo;
               </h2>
               <p className="font-sans text-text-mid text-[17px] leading-relaxed mb-8">
-                Dpulseai is an AI intelligence company building the systems that make industries smarter, 
-                workflows faster, and societies better. We specialize in physics-native modeling, 
-                deterministic automation, and sovereign AI deployment.
+                Dpulseai (DPULSE AI PRIVATE LIMITED) is an AI startup entering the frontier of Physical AI. 
+                We engineer foundational Robotics Brains powered by Vision-Language Models (VLM) and Vision-Language-Action (VLA) architectures, 
+                enabling machines to autonomously perceive, reason, and act in real physical environments.
               </p>
               <p className="font-sans text-text-mid text-[17px] leading-relaxed">
-                Founded in India, we serve clients globally with two specialized subsidiaries: 
-                TENETX for oil & gas AI and TEXFLOW for academic research typesetting.
+                Currently, we are innovating in the agriculture domain to drastically reduce human workforce dependency through 
+                autonomous field robotics. Alongside our Physical AI research, we deliver turnkey enterprise platforms including our 
+                Healthcare Bot, Employee Retirement Management System (ERMS), and E-Estimate digital ledger.
               </p>
             </motion.div>
 
@@ -95,11 +58,14 @@ export default function AboutClient() {
               <h3 className="font-rajdhani font-bold text-[11px] text-gold tracking-widest uppercase mb-10">QUICK FACTS</h3>
               <div className="space-y-8">
                 {[
+                  ["Company", "DPULSE AI PRIVATE LIMITED"],
                   ["Founded", "2024"],
-                  ["Headquarters", "India"],
-                  ["Subsidiaries", "TENETX, TEXFLOW"],
-                  ["Focus", "AI Systems & Automation"],
+                  ["Headquarters", "Pune, Maharashtra, India"],
+                  ["Core Focus", "Physical AI & Robotics Brain (VLM/VLA)"],
+                  ["Key Use Cases", "Agriculture Labor Reduction, Healthcare, Enterprise"],
+                  ["Flagship Products", "Healthcare Bot, ERMS, E-Estimate"],
                   ["Email", "info@dpulseai.com"],
+                  ["Phone", "+91 91 75 79 0779"],
                 ].map(([label, value], idx) => (
                   <div key={idx} className="flex justify-between border-b border-gray-mid pb-4">
                     <span className="font-sans text-text-muted text-[14px]">{label}</span>
@@ -111,40 +77,29 @@ export default function AboutClient() {
           </div>
         </section>
 
-        {/* Board of Directors */}
+        {/* Values */}
         <section className="py-24 px-6 md:px-24 bg-cream">
           <div className="max-w-7xl mx-auto">
             <div className="mb-16">
-              <div className="section-label mb-8">LEADERSHIP</div>
-              <h2 className="font-serif text-[42px] leading-tight text-text-black">The Team Behind Dpulseai</h2>
+              <div className="section-label mb-8">OUR VALUES</div>
+              <h2 className="font-serif text-[42px] leading-tight text-text-black">The Principles That Guide Us</h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {board.map((member, idx) => (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {values.map((val, idx) => (
                 <motion.div
                   key={idx}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: idx * 0.1 }}
-                  className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all group cursor-pointer"
-                  onClick={() => setSelectedMember(member)}
+                  className="bg-white rounded-xl p-8 border border-gray-mid shadow-sm"
                 >
-                  <div className="aspect-square relative overflow-hidden bg-gray-100">
-                    <img 
-                      src={member.avatar} 
-                      alt={member.name} 
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
-                    />
+                  <div className="w-12 h-12 rounded-full bg-gold/10 text-gold flex items-center justify-center font-serif text-[20px] mb-6">
+                    0{idx + 1}
                   </div>
-                  <div className="p-8">
-                    <h3 className="font-serif text-[22px] text-text-black mb-1">{member.name}</h3>
-                    <div className="font-rajdhani font-bold text-[10px] text-gold tracking-widest uppercase mb-4">{member.role}</div>
-                    <p className="font-sans text-text-mid text-[14px] leading-relaxed mb-6 line-clamp-2">{member.bio}</p>
-                    <button className="text-gold font-sans font-bold text-[12px] uppercase flex items-center gap-2">
-                      Read Bio <span>→</span>
-                    </button>
-                  </div>
+                  <h3 className="font-serif text-[24px] text-text-black mb-3">{val.title}</h3>
+                  <p className="font-sans text-text-mid text-[15px] leading-relaxed">{val.desc}</p>
                 </motion.div>
               ))}
             </div>
@@ -182,46 +137,6 @@ export default function AboutClient() {
           </div>
         </section>
       </div>
-
-      {/* Bio Modal */}
-      <AnimatePresence>
-        {selectedMember && (
-          <div className="fixed inset-0 z-[200] flex items-center justify-center p-6">
-            <motion.div 
-              initial={{ opacity: 0 }} 
-              animate={{ opacity: 1 }} 
-              exit={{ opacity: 0 }}
-              className="absolute inset-0 bg-black/60 backdrop-blur-sm"
-              onClick={() => setSelectedMember(null)}
-            />
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.9, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.9, y: 20 }}
-              className="relative bg-white w-full max-w-4xl rounded-2xl overflow-hidden shadow-2xl flex flex-col md:flex-row max-h-[90vh]"
-            >
-              <button 
-                onClick={() => setSelectedMember(null)}
-                className="absolute top-6 right-6 z-10 w-10 h-10 rounded-full bg-white/20 hover:bg-white text-black md:text-white md:hover:text-black transition-all flex items-center justify-center"
-              >
-                <X size={20} />
-              </button>
-              
-              <div className="md:w-1/3 bg-gray-100 h-64 md:h-auto overflow-hidden">
-                <img src={selectedMember.avatar} alt={selectedMember.name} className="w-full h-full object-cover" />
-              </div>
-              
-              <div className="md:w-2/3 p-10 md:p-16 overflow-y-auto">
-                <div className="font-rajdhani font-bold text-[11px] text-gold tracking-widest uppercase mb-4">{selectedMember.role}</div>
-                <h3 className="font-serif text-[36px] text-text-black mb-8">{selectedMember.name}</h3>
-                <div className="font-sans text-text-mid text-[16px] leading-relaxed whitespace-pre-line">
-                  {selectedMember.fullBio}
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        )}
-      </AnimatePresence>
     </>
   );
 }

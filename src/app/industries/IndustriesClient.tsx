@@ -7,36 +7,36 @@ import Link from "next/link";
 
 const industries = [
   {
-    id: "ecommerce",
-    title: "E-Commerce & Logistics",
-    img: "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=1200&q=85&fit=crop",
-    desc: "Predictive supply chain modeling, autonomous customer support agents, and dynamic pricing engines that adapt to real-time market conditions.",
-    bullets: ["Supply chain optimization models", "Autonomous customer support agents", "Dynamic pricing engines"],
-    color: "var(--gold)"
+    id: "agriculture",
+    title: "Agriculture & Autonomous Farming",
+    img: "https://images.unsplash.com/photo-1586771107445-d3ca888129ff?w=1200&q=85&fit=crop",
+    desc: "Overcoming severe rural labor shortages through Physical AI. Autonomous weeding, precision crop spraying, and continuous health monitoring that reduce workforce dependency by 70%+.",
+    bullets: ["70%+ manual workforce reduction", "Sub-centimeter autonomous field navigation", "Real-time crop disease & pest detection", "85% chemical pesticide reduction"],
+    color: "#1A7A6E"
   },
   {
     id: "healthcare",
     title: "Healthcare & MedTech",
     img: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=85&fit=crop",
-    desc: "Secure, HIPAA/HIPAA-compliant AI systems for patient data analysis, medical imaging pre-screening, and automated clinical documentation.",
-    bullets: ["Patient data analysis", "Medical transcription AI", "Clinical trial matching"],
-    color: "var(--tenetx)"
+    desc: "Secure, clinical-grade conversational and predictive AI. The Healthcare Bot delivers 24/7 symptom assessment, automated patient triage, and evidence-based decision guidance for practitioners.",
+    bullets: ["24/7 autonomous clinical triage", "Practitioner decision support", "HIPAA/privacy-compliant architecture", "Multi-channel patient connectivity"],
+    color: "#E11D48"
   },
   {
-    id: "realestate",
-    title: "Real Estate",
-    img: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=85&fit=crop",
-    desc: "Automated property valuation models using geospatial data, AI-driven lead qualification, and intelligent lease abstraction tools.",
-    bullets: ["Lead qualification AI", "Property valuation models", "Automated contract analysis"],
-    color: "var(--texflow)"
+    id: "infrastructure",
+    title: "Public Infrastructure & Capital Works",
+    img: "https://images.unsplash.com/photo-1541888946425-d0fbb186156f?w=1200&q=85&fit=crop",
+    desc: "Digitizing and validating large-scale capital project estimates through the E-Estimate platform. Integrates Measurement Books and Estimate Ledgers with automated cost auditing.",
+    bullets: ["Digital Measurement Book synchronization", "Automated calculation validation", "Predictive cost overrun prevention", "Multi-tier approval audit trail"],
+    color: "#B8922A"
   },
   {
-    id: "legal",
-    title: "Legal & Compliance",
-    img: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&q=85&fit=crop",
-    desc: "Accelerate discovery with deterministic document review, contract lifecycle automation, and regulatory compliance monitoring.",
-    bullets: ["Document review automation", "Legal research AI", "Compliance monitoring"],
-    color: "var(--text-black)"
+    id: "enterprise",
+    title: "Enterprise Workforce & Administration",
+    img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=85&fit=crop",
+    desc: "Streamlining complex enterprise lifecycles with the Employee Retirement Management System (ERMS). Automates pension and gratuity computations with real-time workforce analytics.",
+    bullets: ["Automated pension & gratuity computation", "Service tenure & benefit eligibility tracking", "Workforce transition trend forecasting", "Audit-ready institutional compliance"],
+    color: "#1B5FA8"
   }
 ];
 

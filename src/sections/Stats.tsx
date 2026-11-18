@@ -5,22 +5,22 @@ import { motion } from "framer-motion";
 
 const stats = [
   {
-    number: "60%",
-    target: 60,
+    number: "70%",
+    target: 70,
     suffix: "%",
-    label: "Reduced Manual Workload",
+    label: "Reduced Agricultural Field Labor",
   },
   {
-    number: "3×",
-    target: 3,
-    suffix: "×",
-    label: "Improved Decision Speed Across Teams",
+    number: "<15ms",
+    target: 15,
+    suffix: "ms",
+    label: "Real-Time VLA Sensorimotor Latency",
   },
   {
     number: "100%",
     target: 100,
     suffix: "%",
-    label: "Data Sovereignty with TENETX",
+    label: "Edge Data Sovereignty & Offline Execution",
   },
 ];
 

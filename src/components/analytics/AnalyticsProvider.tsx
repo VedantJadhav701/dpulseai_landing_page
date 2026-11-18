@@ -10,7 +10,8 @@ export default function AnalyticsProvider({ children }: { children: React.ReactN
   useEffect(() => {
     if (pathname) {
       // Placeholder for GA4 / PostHog / Plausible
-      console.log(`[Institutional Analytics] Page View: ${pathname}${searchParams.toString() ? `?${searchParams.toString()}` : ""}`);
+      const query = searchParams ? searchParams.toString() : "";
+      console.log(`[Institutional Analytics] Page View: ${pathname}${query ? `?${query}` : ""}`);
     }
   }, [pathname, searchParams]);
 

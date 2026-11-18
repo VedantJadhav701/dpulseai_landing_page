@@ -4,10 +4,10 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const diffs = [
-  { title: "Production-First Mindset", desc: "We build for reality, not for demos. Reliability is our baseline." },
-  { title: "Domain Intelligence", desc: "Expertise in deep industrial sectors ensures our AI understands the context." },
-  { title: "Seamless Integration", desc: "Our systems plug into your existing stack without friction." },
-  { title: "Agentic Logic", desc: "Moving beyond simple chatbots to autonomous agents that execute tasks." },
+  { title: "Physical AI & Robotics First", desc: "We bridge foundational digital models with physical robotics action in real-world environments." },
+  { title: "Agriculture Labor Innovation", desc: "Deep focus on automating manual agricultural field tasks to solve acute workforce shortages." },
+  { title: "Multimodal VLM & VLA Logic", desc: "Moving beyond passive language models to closed-loop Vision-Language-Action agents that physically execute." },
+  { title: "Production-Grade Reliability", desc: "Tested across clinical, infrastructure, and field deployments with air-gapped on-device security." },
 ];
 
 const Differentiators = () => {

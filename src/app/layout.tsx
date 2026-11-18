@@ -27,7 +27,6 @@ const rajdhani = Rajdhani({
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
   display: "swap",
 });
 
@@ -39,9 +38,9 @@ const bebasNeue = Bebas_Neue({
 });
 
 export const metadata: Metadata = {
-  title: "Dpulseai | AI Solutions for Enterprise",
-  description: "We build agentic AI systems, domain-specific models, and intelligent automation platforms. Subsidiaries: TENETX (Oil & Gas AI) and TEXFLOW (Research Typesetting).",
-  keywords: ["AI", "machine learning", "oil and gas", "research", "typesetting", "Dpulseai", "TENETX", "TEXFLOW"],
+  title: "Dpulseai | Physical AI, Robotics Brain & Enterprise Intelligence",
+  description: "Dpulseai is an AI startup pioneering Physical AI, foundational Robotics Brain (VLM & VLA) development, autonomous agricultural field robotics to reduce manual labor, and turnkey enterprise platforms.",
+  keywords: ["Physical AI", "Robotics Brain", "VLM", "VLA", "Vision Language Action", "Agriculture Robotics", "Healthcare AI", "Enterprise AI", "Dpulseai", "DPULSE AI PRIVATE LIMITED"],
 };
 
 export default function RootLayout({

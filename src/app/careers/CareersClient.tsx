@@ -7,43 +7,43 @@ import PageHero from "@/components/PageHero";
 const jobs = [
   {
     id: 1,
-    title: "ML Engineer — Physics-Informed Neural Networks",
-    team: "TENETX",
-    location: "India Remote",
+    title: "Physical AI & Robotics Engineer (VLM / VLA Models)",
+    team: "Robotics Brain",
+    location: "Pune / India Remote",
     type: "Full-time",
-    desc: "You will lead the development of our PINN architecture for real-time drilling optimization. Requires deep expertise in PyTorch and fluid dynamics."
+    desc: "Lead the development of our foundational Vision-Language-Action (VLA) architecture for physical embodied robots. Deep expertise in PyTorch, multimodal transformers, spatial 3D reasoning, and low-latency motor control required."
   },
   {
     id: 2,
-    title: "LaTeX / Document Engineering Specialist",
-    team: "TEXFLOW",
-    location: "India Remote",
+    title: "Autonomous Field Robotics Engineer (Agriculture Domain)",
+    team: "Physical AI",
+    location: "Pune / Field Operations",
     type: "Full-time",
-    desc: "Build deterministic parsing engines bridging Microsoft Word XML and publisher-ready LaTeX. Python and deep LaTeX macro knowledge required."
+    desc: "Design and deploy autonomous agricultural field systems aimed at drastically reducing human manual labor. Experience in all-terrain autonomous navigation (ROS 2), real-time computer vision, and robotic actuators."
   },
   {
     id: 3,
-    title: "Agentic AI Systems Developer",
-    team: "Dpulseai Core",
+    title: "Enterprise AI & Full-Stack Systems Engineer",
+    team: "Enterprise Products",
     location: "India Remote",
     type: "Full-time",
-    desc: "Develop our core autonomous agent framework that powers our enterprise solutions. Experience with LangChain, LangGraph, and tool-use is essential."
+    desc: "Develop scalable enterprise platforms including our Healthcare Bot, ERMS (retirement governance), and E-Estimate digital ledgers. Experience with modern React/Next.js, Python microservices, and secure multi-tenant architectures."
   },
   {
     id: 4,
-    title: "Business Development Manager",
-    team: "Strategy",
-    location: "India",
+    title: "Computer Vision & Edge Sensor Fusion Specialist",
+    team: "Hardware + Edge AI",
+    location: "Pune, India",
     type: "Full-time",
-    desc: "Drive enterprise adoption of our AI systems across industrial sectors. B2B enterprise sales experience in deep tech required."
+    desc: "Optimize neural networks for on-device edge execution across embedded NPUs. Implement real-time time-synchronized sensor fusion (RGB-D, LiDAR, IMU) for physical machines."
   },
   {
     id: 5,
-    title: "AI Research Intern",
-    team: "R&D",
-    location: "India",
+    title: "Physical AI & Robotics Research Intern",
+    team: "R&D Labs",
+    location: "Pune / Remote",
     type: "Internship (6 months)",
-    desc: "Work with our team on experimental agentic architectures. Final year CS/AI students preferred."
+    desc: "Work with our engineering team on experimental VLM/VLA action tokenization and real-world agricultural robotic trials. Final year CS/Robotics/AI students preferred."
   }
 ];
 
@@ -86,13 +86,13 @@ export default function CareersClient() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-cream p-8 rounded-lg border border-gray-mid text-center">
               <div className="w-12 h-12 rounded-full bg-gold/20 text-gold flex items-center justify-center text-xl mx-auto mb-6">🚀</div>
-              <h3 className="font-sans font-bold text-[18px] text-text-black mb-3">Meaningful Mission</h3>
-              <p className="font-sans text-text-mid text-[15px]">We build AI that impacts critical infrastructure and global research, not just chatbots.</p>
+              <h3 className="font-sans font-bold text-[18px] text-text-black mb-3">Physical AI Impact</h3>
+              <p className="font-sans text-text-mid text-[15px]">We build Physical AI and robotics brains that interact with the physical world, solving critical labor shortages in agriculture and empowering organizations.</p>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="bg-cream p-8 rounded-lg border border-gray-mid text-center">
-              <div className="w-12 h-12 rounded-full bg-tenetx-primary/20 text-tenetx-primary flex items-center justify-center text-xl mx-auto mb-6">💻</div>
-              <h3 className="font-sans font-bold text-[18px] text-text-black mb-3">Hard Engineering</h3>
-              <p className="font-sans text-text-mid text-[15px]">Solve complex problems in physics-informed neural networks and deterministic parsing.</p>
+              <div className="w-12 h-12 rounded-full bg-[#1B5FA8]/20 text-[#1B5FA8] flex items-center justify-center text-xl mx-auto mb-6">💻</div>
+              <h3 className="font-sans font-bold text-[18px] text-text-black mb-3">Frontier VLM & VLA</h3>
+              <p className="font-sans text-text-mid text-[15px]">Solve complex challenges in Vision-Language-Action modeling, sensor fusion, and real-time edge control.</p>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="bg-cream p-8 rounded-lg border border-gray-mid text-center">
               <div className="w-12 h-12 rounded-full bg-texflow-primary/20 text-texflow-primary flex items-center justify-center text-xl mx-auto mb-6">📈</div>

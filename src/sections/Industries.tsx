@@ -6,28 +6,28 @@ import Link from "next/link";
 
 const industries = [
   {
-    name: "E-commerce",
-    slug: "ecommerce",
-    image: "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=800&q=85&fit=crop",
-    alt: "E-commerce shopping technology and logistics warehouse",
+    name: "Agriculture & Farming",
+    slug: "agriculture",
+    image: "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=800&q=85&fit=crop",
+    alt: "Autonomous agricultural field robotics alleviating manual labor",
   },
   {
-    name: "Healthcare",
+    name: "Healthcare & MedTech",
     slug: "healthcare",
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=85&fit=crop",
-    alt: "Healthcare hospital AI medical technology equipment",
+    alt: "Healthcare Bot and clinical AI triage systems",
   },
   {
-    name: "Real Estate",
-    slug: "realestate",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=85&fit=crop",
-    alt: "Real estate modern architecture property building",
+    name: "Public Infrastructure",
+    slug: "infrastructure",
+    image: "https://images.unsplash.com/photo-1541888946425-d0fbb186156f?w=800&q=85&fit=crop",
+    alt: "E-Estimate digital ledger and capital project planning",
   },
   {
-    name: "Legal",
-    slug: "legal",
-    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=85&fit=crop",
-    alt: "Legal law court documents and professional gavel",
+    name: "Enterprise Workforce",
+    slug: "enterprise",
+    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=85&fit=crop",
+    alt: "ERMS employee retirement and enterprise workforce systems",
   },
 ];
 

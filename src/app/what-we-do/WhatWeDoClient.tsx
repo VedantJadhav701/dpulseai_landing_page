@@ -6,36 +6,69 @@ import PageHero from "@/components/PageHero";
 
 const solutions = [
   {
-    title: "Agentic AI Systems",
-    desc: "Autonomous agents designed for complex, multi-step workflows. Our systems can plan, execute, and self-correct across entire business processes.",
-    details: ["Goal-oriented planning", "Multi-tool orchestration", "Self-healing pipelines"],
-    color: "#B8922A"
-  },
-  {
-    title: "Domain-Specific Models",
-    desc: "Fine-tuned LLMs trained on your proprietary industry data. We build models that understand your specific domain context and technical terminology.",
-    details: ["Dataset curation & cleaning", "LoRA/QLoRA fine-tuning", "Bias mitigation"],
+    title: "Physical AI & Robotics Brain (VLM/VLA)",
+    desc: "Developing foundational Vision-Language Models and Vision-Language-Action systems that empower autonomous robots with spatial reasoning, multi-modal perception, and real-time physical control.",
+    details: ["VLA action token execution", "Spatial 3D scene affordances", "Sub-15ms edge sensorimotor loop"],
     color: "#1B5FA8"
   },
   {
-    title: "Intelligent Automation",
-    desc: "End-to-end platforms with intelligent logic layers. We go beyond RPA by building systems that reason, adapt, and learn from every interaction.",
-    details: ["Logic-driven workflows", "Adaptive decisioning", "System-wide integration"],
+    title: "Agriculture Domain Physical AI",
+    desc: "Pioneering autonomous agricultural field robotics to drastically reduce manual labor dependency, automate weeding and harvesting, and optimize crop yields.",
+    details: ["70%+ manual labor reduction", "Centimeter-precision navigation", "Real-time crop & weed detection"],
     color: "#1A7A6E"
   },
   {
-    title: "Production Monitoring",
-    desc: "Real-time AI observability and reliability. We deploy with full telemetry, self-healing capabilities, and human-in-the-loop safeguards.",
-    details: ["Drift detection", "Uncertainty quantification", "Automated rollbacks"],
+    title: "AI-Driven Analytics & PulseBoard",
+    desc: "Transform raw data into actionable insights with predictive analytics, pattern recognition in complex datasets, and natural language processing for unstructured archives.",
+    details: ["Predictive analytics & forecasting", "Real-time data visualization", "Custom machine learning models"],
+    color: "#B8922A"
+  },
+  {
+    title: "Custom Software & Cloud SaaS Tools",
+    desc: "Tailored enterprise software and ready-to-deploy platforms built to solve unique operational bottlenecks with scalable and secure cloud infrastructure.",
+    details: ["End-to-end custom development", "System integration with legacy stacks", "Enterprise-grade reliability"],
     color: "#141414"
+  },
+  {
+    title: "Chatbot & Conversational AI",
+    desc: "Intelligent conversation systems that understand, learn, and assist across web, mobile, and voice interfaces with contextual memory and multi-channel deployment.",
+    details: ["Natural language understanding", "Multi-channel deployment", "Voice-enabled interfaces"],
+    color: "#B8922A"
+  },
+  {
+    title: "Hardware + Edge AI Systems",
+    desc: "Intelligent systems operating directly at the physical edge for real-time processing and decisions, integrating sensors with low-power compute.",
+    details: ["Embedded AI solutions", "IoT sensor fusion technology", "Custom edge hardware integration"],
+    color: "#1B5FA8"
   }
 ];
 
 const diffs = [
-  { title: "Production-First Mindset", desc: "We build for reality, not for demos. Reliability is our baseline." },
-  { title: "Domain Intelligence", desc: "Expertise in deep industrial sectors ensures our AI understands the context." },
-  { title: "Seamless Integration", desc: "Our systems plug into your existing stack without friction." },
-  { title: "Agentic Logic", desc: "Moving beyond simple chatbots to autonomous agents that execute tasks." },
+  { title: "Physical AI & Robotics First", desc: "We bridge foundational digital models with physical robotics action in real-world environments." },
+  { title: "Agriculture Labor Innovation", desc: "Deep focus on automating manual agricultural field tasks to solve acute workforce shortages." },
+  { title: "Multimodal VLM & VLA Logic", desc: "Moving beyond passive language models to closed-loop Vision-Language-Action agents that physically execute." },
+  { title: "Production-Grade Reliability", desc: "Tested across clinical, infrastructure, and field deployments with air-gapped on-device security." },
+];
+
+const products = [
+  {
+    title: "Healthcare Bot",
+    category: "HEALTHCARE AI",
+    desc: "A reliable Health AI assistant trained on medical expertise, supporting healthcare professionals and delivering the latest medical insights with 24/7 availability.",
+    features: ["Medical expertise training", "Health assessment & triage", "Clinical decision support", "24/7 continuous availability"]
+  },
+  {
+    title: "Employee Retirement Management System (ERMS)",
+    category: "ENTERPRISE WORKFORCE",
+    desc: "Streamlines the entire retirement lifecycle for enterprise workforces, from tracking service tenure and benefit eligibility to generating pension reports and workforce transition models.",
+    features: ["Tenure & eligibility tracking", "Automated pension & gratuity ledgers", "Real-time retirement trend analytics", "Enhanced compliance & accountability"]
+  },
+  {
+    title: "E-Estimate System",
+    category: "INFRASTRUCTURE & CAPITAL PROJECTS",
+    desc: "A streamlined digital platform for managing project estimates based on field measurements and predictive cost forecasting. Integrates Measurement Books and Estimate Ledgers with automated calculation.",
+    features: ["Field measurement integration", "Cost forecasting capabilities", "Automated calculation & validation", "Streamlined approval governance"]
+  }
 ];
 
 export default function WhatWeDoClient() {
@@ -81,6 +114,57 @@ export default function WhatWeDoClient() {
                     </div>
                   ))}
                 </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Flagship Products */}
+      <section className="py-24 bg-gray-light px-6 md:px-24 border-t border-gray-mid">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-16">
+            <div className="section-label mb-8">FLAGSHIP PRODUCTS</div>
+            <h2 className="font-serif text-[42px] leading-tight text-text-black max-w-3xl">
+              Turnkey AI Platforms Built for High-Impact Outcomes
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {products.map((prod, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.1 }}
+                className="bg-white rounded-xl p-8 border border-gray-mid shadow-sm flex flex-col justify-between hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+              >
+                <div>
+                  <span className="font-rajdhani font-bold text-[11px] tracking-widest text-gold uppercase mb-3 block">
+                    {prod.category}
+                  </span>
+                  <h3 className="font-serif text-[24px] text-text-black mb-4">
+                    {prod.title}
+                  </h3>
+                  <p className="font-sans text-text-mid text-[15px] leading-relaxed mb-6">
+                    {prod.desc}
+                  </p>
+                  <div className="space-y-2 mb-8">
+                    {prod.features.map((feat, fIdx) => (
+                      <div key={fIdx} className="flex items-center gap-2">
+                        <span className="text-gold text-xs">✓</span>
+                        <span className="font-sans text-text-dark text-[13px]">{feat}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <a
+                  href="/contact"
+                  className="font-rajdhani font-bold text-[12px] tracking-widest uppercase text-gold hover:text-gold-light flex items-center gap-2 transition-colors pt-4 border-t border-gray-100"
+                >
+                  Request Demo <span>→</span>
+                </a>
               </motion.div>
             ))}
           </div>

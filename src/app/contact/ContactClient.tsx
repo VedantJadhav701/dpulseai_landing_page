@@ -72,11 +72,15 @@ export default function ContactClient() {
                     <label className="block font-sans text-[13px] font-bold text-text-black mb-2">Subject *</label>
                     <select required className="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:border-gold font-sans bg-white">
                       <option value="">Select a topic...</option>
-                      <option value="general">General Inquiry</option>
-                      <option value="tenetx">TENETX — Oil & Gas AI</option>
-                      <option value="texflow">TEXFLOW — Research Platform</option>
-                      <option value="partnership">Partnership Opportunity</option>
-                      <option value="careers">Careers</option>
+                      <option value="general">General Enterprise Inquiry</option>
+                      <option value="robotics-brain">Robotics Brain (VLM & VLA Development)</option>
+                      <option value="agriculture-ai">Agriculture Physical AI & Field Robotics</option>
+                      <option value="healthcare-bot">Healthcare Bot</option>
+                      <option value="erms">ERMS (Retirement Management System)</option>
+                      <option value="e-estimate">E-Estimate System</option>
+                      <option value="custom-software">Custom AI Software Development</option>
+                      <option value="partnership">Strategic Partnership Opportunity</option>
+                      <option value="careers">Careers & Research Internship</option>
                     </select>
                   </div>
                 </div>
@@ -107,7 +111,18 @@ export default function ContactClient() {
                   </div>
                   <div>
                     <div className="font-sans font-bold text-[13px] text-text-muted uppercase tracking-wider mb-1">Email</div>
-                    <a href="mailto:info@dpulseai.com" className="font-sans text-[16px] text-text-black hover:text-gold transition-colors font-medium">info@dpulseai.com</a>
+                    <a href="mailto:info@dpulseai.com" className="font-sans text-[16px] text-text-black hover:text-gold transition-colors font-medium block">info@dpulseai.com</a>
+                    <a href="mailto:support@dpulseai.com" className="font-sans text-[14px] text-text-mid hover:text-gold transition-colors">support@dpulseai.com</a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-gold/10 text-gold flex items-center justify-center flex-shrink-0">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </div>
+                  <div>
+                    <div className="font-sans font-bold text-[13px] text-text-muted uppercase tracking-wider mb-1">Phone</div>
+                    <a href="tel:+919175790779" className="font-sans text-[16px] text-text-black hover:text-gold transition-colors font-medium">+91 91 75 79 0779</a>
                   </div>
                 </div>
                 
@@ -116,8 +131,11 @@ export default function ContactClient() {
                     <MapPin size={18} />
                   </div>
                   <div>
-                    <div className="font-sans font-bold text-[13px] text-text-muted uppercase tracking-wider mb-1">Location</div>
-                    <p className="font-sans text-[16px] text-text-black font-medium">India</p>
+                    <div className="font-sans font-bold text-[13px] text-text-muted uppercase tracking-wider mb-1">Headquarters</div>
+                    <p className="font-sans text-[15px] text-text-black font-medium leading-relaxed">
+                      DPULSE AI PRIVATE LIMITED<br />
+                      SHUBHAM APT., FLAT NO.6 B, SR. NO. 23, BANER, Baner Gaon, Haveli, Pune- 411045, Maharashtra, India
+                    </p>
                   </div>
                 </div>
 
@@ -126,8 +144,8 @@ export default function ContactClient() {
                     <Clock size={18} />
                   </div>
                   <div>
-                    <div className="font-sans font-bold text-[13px] text-text-muted uppercase tracking-wider mb-1">Response Time</div>
-                    <p className="font-sans text-[16px] text-text-black font-medium">Within 24 business hours</p>
+                    <div className="font-sans font-bold text-[13px] text-text-muted uppercase tracking-wider mb-1">Operating Hours</div>
+                    <p className="font-sans text-[15px] text-text-black font-medium">Monday–Friday: 9:00 AM – 6:00 PM IST</p>
                   </div>
                 </div>
               </div>
@@ -135,11 +153,14 @@ export default function ContactClient() {
               <hr className="my-8 border-gray-mid" />
               
               <div className="space-y-4">
-                <Link href="/subsidiaries/tenetx" className="block w-full text-center border border-tenetx-primary text-tenetx-primary font-sans font-bold py-3 rounded hover:bg-tenetx-primary hover:text-white transition-colors">
-                  TENETX Inquiries →
+                <Link href="/applied-domains#robotics" className="block w-full text-center border border-[#1B5FA8] text-[#1B5FA8] font-sans font-bold py-3 rounded hover:bg-[#1B5FA8] hover:text-white transition-colors">
+                  Robotics Brain (VLM/VLA) Inquiries →
                 </Link>
-                <Link href="/subsidiaries/texflow" className="block w-full text-center border border-texflow-primary text-texflow-primary font-sans font-bold py-3 rounded hover:bg-texflow-primary hover:text-white transition-colors">
-                  TEXFLOW Inquiries →
+                <Link href="/applied-domains#agriculture" className="block w-full text-center border border-[#1A7A6E] text-[#1A7A6E] font-sans font-bold py-3 rounded hover:bg-[#1A7A6E] hover:text-white transition-colors">
+                  Agriculture Physical AI Inquiries →
+                </Link>
+                <Link href="/what-we-do#products" className="block w-full text-center border border-gold text-gold font-sans font-bold py-3 rounded hover:bg-gold hover:text-white transition-colors">
+                  Healthcare Bot & Product Demos →
                 </Link>
               </div>
 

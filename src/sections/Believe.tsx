@@ -5,29 +5,29 @@ import { motion } from "framer-motion";
 
 const topics = [
   {
-    title: "AI Systems",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=560&q=85&fit=crop",
-    alt: "Robot AI system with advanced technology interface",
+    title: "Enterprise AI Systems",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=560&q=85&fit=crop",
+    alt: "Sovereign enterprise AI infrastructure and secure datacenter server architecture",
   },
   {
-    title: "Oil & Gas",
-    image: "https://images.unsplash.com/photo-1570126646281-5ec88111777f?w=560&q=85&fit=crop",
-    alt: "Oil and gas pipeline operations with industrial workers",
+    title: "Robotics Brain (VLM/VLA)",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=560&q=85&fit=crop",
+    alt: "Embodied AI robotics brain and precision robotic manipulator arm",
   },
   {
-    title: "Research",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=560&q=85&fit=crop",
-    alt: "PhD researcher student working in university laboratory",
+    title: "Agriculture & Field AI",
+    image: "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=560&q=85&fit=crop",
+    alt: "Autonomous field robotics transforming agriculture and crop management",
   },
   {
     title: "Society Impact",
     image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=560&q=85&fit=crop",
-    alt: "Community helping society in rural India setting",
+    alt: "Technology empowering community well-being and social advancement",
   },
   {
-    title: "Innovation",
+    title: "Physical AI Innovation",
     image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=560&q=85&fit=crop",
-    alt: "Innovation future technology with globe and digital network",
+    alt: "Physical AI global neural network and embodied computational systems",
   },
 ];
 
